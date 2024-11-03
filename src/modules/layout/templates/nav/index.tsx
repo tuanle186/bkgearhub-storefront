@@ -22,10 +22,15 @@ export default async function Nav() {
           <div className="flex items-center h-full">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase flex items-center"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              <img
+                src="/BKGearHub_logo.png"  // Assuming it's placed in the public folder
+                alt="Logo"
+                className="h-14 w-auto mr-2"
+              />
+              BKGearHub
             </LocalizedClientLink>
           </div>
 

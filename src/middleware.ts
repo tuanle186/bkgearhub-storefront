@@ -142,5 +142,7 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|favicon.ico).*)"],
+  matcher: [
+    "/((?!api|_next/static|favicon.ico|BKGearHub_logo.png|hero.webp|hero.jpg|public/.*).*)",
+  ],
 }
