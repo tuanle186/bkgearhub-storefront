@@ -25,6 +25,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn2.cellphones.com.vn", // Added new hostname here
+      },
     ],
   },
 }
