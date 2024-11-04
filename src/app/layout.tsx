@@ -11,6 +11,23 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     <html lang="en" data-mode="light">
       <body>
         <main className="relative">{props.children}</main>
+        {/* Chatbot script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.embeddedChatbotConfig = {
+                chatbotId: "-phMl0R4QhSVdVizpp-3S",
+                domain: "www.chatbase.co"
+              };
+            `,
+          }}
+        />
+        <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="-phMl0R4QhSVdVizpp-3S"
+          domain="www.chatbase.co"
+          defer
+        ></script>
       </body>
     </html>
   )
